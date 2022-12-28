@@ -15,8 +15,8 @@ const userSchema = new mongoose.Schema({
   }], 
   active: {
     type: Boolean, 
-    required: true 
+    default: true 
   }
 })
 
-module.exports = mongoose.modeul("User", userSchema)
+module.exports = mongoose.model("User", userSchema)
